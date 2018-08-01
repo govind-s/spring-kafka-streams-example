@@ -12,7 +12,7 @@ public class WordCountTaskFactory {
 	public static Properties newStreamConfig(String appId) {
         Properties props = new Properties();
         props.put(StreamsConfig.APPLICATION_ID_CONFIG, appId);
-        props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "100.78.20.254:9092");
+        props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
         props.put(StreamsConfig.BUFFERED_RECORDS_PER_PARTITION_CONFIG, 3);
         props.put(StreamsConfig.COMMIT_INTERVAL_MS_CONFIG, 2_000L);
         props.put(StreamsConfig.NUM_STANDBY_REPLICAS_CONFIG, 0);
